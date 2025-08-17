@@ -3,7 +3,7 @@ import photo13 from "../assets/photo13.png"
 
 const Featured =() => {
   return (
-    <section className="bg-yellow-50 py-12 px-8 text-center">
+    <section className="bg-amber-50 py-12 px-8 text-center">
       <h2 className="text-2xl font-bold text-green-800 mb-4">Featured</h2>
       <p className="text-gray-500 mb-6">
         Recognized and celebrated by leading publications – Amrutam in the spotlight!

@@ -18,7 +18,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="bg-yellow-50 py-16">
+    <section className="bg-amber-50 py-16">
       <div className="max-w-6xl mx-auto px-6">
        
         <div className="text-center mb-10">

@@ -5,7 +5,7 @@ import photo6 from "../assets/photo6.png"
 
  const ChooseSessionMode = () => {
   return (
-    <section className="bg-yellow-50 py-16 px-8">
+    <section className="bg-amber-50 py-16 px-8">
       <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
         <div className="flex-1 flex justify-center gap-4">
          <img src={photo4} alt="" />

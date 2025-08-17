@@ -3,7 +3,7 @@ import photo11 from "../assets/photo11.png"
 
 const Download = () => {
   return (
-    <section className="bg-yellow-50 py-16">
+    <section className="bg-amber-50 py-16">
       <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center">
         
      

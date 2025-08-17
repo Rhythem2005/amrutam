@@ -6,7 +6,7 @@ import photo10 from "../assets/photo10.png";
 
 const JoinCircle = () => {
   return (
-    <section className="bg-yellow-50 py-16 px-8">
+    <section className="bg-amber-50 py-16 px-8">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-green-800">
           Join Our Circle of Care

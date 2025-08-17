@@ -3,7 +3,7 @@ import photo2 from '../assets/photo2.png'
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-r from-yellow-50 to-yellow-100 py-12 px-8 flex flex-col md:flex-row items-center">
+    <section className="bg-amber-50 py-12 px-8 flex flex-col md:flex-row items-center">
       <div className="flex-1 space-y-6">
         <p className="text-gray-500">Namaste, Welcome to Amrutam</p>
         <h1 className="text-4xl font-bold text-green-800">

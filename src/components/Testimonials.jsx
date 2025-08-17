@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <section className="py-16 bg-green-50">
+    <section className="py-16 bg-amber-50">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center text-green-800 mb-12">
           What Other Ayurvedic Doctors Are Saying
