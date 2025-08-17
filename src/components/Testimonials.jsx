@@ -2,54 +2,51 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <section className="py-16 bg-amber-50">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-green-800 mb-12">
-          What Other Ayurvedic Doctors Are Saying
-        </h2>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              name: "Dr. Anjali Sharma",
-              feedback:
-                "This course transformed the way I approach my patients. Highly recommended!",
-              img: "https://via.placeholder.com/100",
-            },
-            {
-              name: "Dr. Rajesh Mehta",
-              feedback:
-                "Practical, insightful, and well-structured. A must for any Ayurvedic practitioner.",
-              img: "https://via.placeholder.com/100",
-            },
-            {
-              name: "Dr. Kavita Nair",
-              feedback:
-                "The real-life examples and case studies made learning so much easier.",
-              img: "https://via.placeholder.com/100",
-            },
-          ].map((testimonial, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-xl shadow-lg p-6 text-center"
-            >
-              <img
-                src={testimonial.img}
-                alt={testimonial.name}
-                className="w-20 h-20 rounded-full mx-auto mb-4"
-              />
-              <p className="text-gray-700 italic mb-4">
-                "{testimonial.feedback}"
-              </p>
-              <h4 className="font-semibold text-green-800">
-                {testimonial.name}
-              </h4>
-            </div>
-          ))}
+    <div className="bg-amber-50 py-12 px-6 rounded-2xl">
+      <h2 className="text-2xl font-bold text-center mb-8">What Experts Say</h2>
+      <div className="grid md:grid-cols-3 gap-6">
+        
+        {/* Testimonial 1 */}
+        <div className="bg-yellow-50 shadow-md rounded-xl p-6">
+          <h3 className="text-lg font-semibold mb-2">
+            Dr. Pooja Deshmukh, BAMS
+          </h3>
+          <p className="text-gray-700 leading-relaxed">
+            Amrutam beautifully bridges the gap between traditional Ayurveda and
+            modern wellness. Their high-quality ingredients and ethical practices
+            make them a trustworthy choice for those looking to embrace a
+            healthier lifestyle.
+          </p>
         </div>
-      </div>
-    </section>
-  );
-};
 
+        {/* Testimonial 2 */}
+        <div className="bg-yellow-50 shadow-md rounded-xl p-6">
+          <h3 className="text-lg font-semibold mb-2">
+            Dr. Arjun Mehta, Ayurvedic Doctor
+          </h3>
+          <p className="text-gray-700 leading-relaxed">
+            As an Ayurvedic doctor, I appreciate Amrutam’s commitment to purity
+            and efficacy. Their herbal blends are thoughtfully crafted, ensuring
+            maximum benefits for mind and body. I’ve personally seen positive
+            results in my patients using their products.
+          </p>
+        </div>
+
+        {/* Testimonial 3 */}
+        <div className="bg-yellow-50 shadow-md rounded-xl p-6">
+          <h3 className="text-lg font-semibold mb-2">
+            Dr. Kavita Sharma, Holistic Practitioner
+          </h3>
+          <p className="text-gray-700 leading-relaxed">
+            What I admire most about Amrutam is their dedication to authenticity.
+            Their products remain true to Ayurveda’s wisdom while being easy to
+            integrate into modern life. This balance makes them a reliable choice
+            for my patients seeking natural solutions.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  );
+}
 export default Testimonials;
