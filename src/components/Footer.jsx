@@ -1,11 +1,12 @@
 import React from "react";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-amber-50 py-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
         
-      
+        {/* LEFT - COMPANY INFO */}
         <div>
           <h2 className="text-green-900 text-2xl font-bold tracking-wide mb-4">
             AMRUTAM
@@ -20,7 +21,7 @@ const Footer = () => {
           <p className="text-gray-700">+91 9713171999</p>
         </div>
 
-       
+        {/* MIDDLE - LINKS */}
         <div>
           <h3 className="text-green-800 font-semibold mb-4">Information</h3>
           <ul className="space-y-2 text-gray-700">
@@ -38,17 +39,25 @@ const Footer = () => {
         <div>
           <h3 className="text-green-800 font-semibold mb-4">Follow Us</h3>
           <div className="flex space-x-4">
-            <a href="#" className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" 
+              className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
+              <FaFacebookF />
             </a>
-            <a href="#" className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" 
+              className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
+              <FaTwitter />
             </a>
-            <a href="#" className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" 
+              className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
+              <FaInstagram />
             </a>
-            <a href="#" className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" 
+              className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
+              <FaLinkedinIn />
             </a>
-            <a href="#" className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
-            </a>
-            <a href="#" className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
+            <a href="https://youtube.com" target="_blank" rel="noreferrer" 
+              className="bg-green-800 p-2 rounded-full text-white hover:bg-green-700">
+              <FaYoutube />
             </a>
           </div>
         </div>
