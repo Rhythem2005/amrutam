@@ -2,10 +2,9 @@ import React from "react";
 import photo1 from "../assets/photo1.png"
 import photo3 from "../assets/photo3.png"
 
-export default function WhyChooseUs() {
+const WhyChooseUs = () => {
   return (
     <section className="bg-yellow-50 py-16 px-8">
-      {/* Section Heading */}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-green-800">Why Doctors Choose Us?</h2>
         <p className="text-gray-500 mt-2">
@@ -13,15 +12,12 @@ export default function WhyChooseUs() {
         </p>
       </div>
 
-      {/* Row 1 - Instant Call */}
       <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
-        {/* Left Images */}
         <div className="flex-1 flex justify-center gap-4">
          <img src={photo1} alt="my photo" />
           
         </div>
 
-        {/* Right Text */}
         <div className="flex-1">
           <h3 className="text-xl font-semibold text-green-800">
             Instant FREE 5–Mins Call
@@ -35,15 +31,12 @@ export default function WhyChooseUs() {
         </div>
       </div>
 
-      {/* Row 2 - Forum */}
       <div className="flex flex-col md:flex-row-reverse items-center gap-10">
-        {/* Right Images */}
         <div className="flex-1 flex justify-center gap-4">
             <img src={photo3} alt="i photo" />
           
         </div>
 
-        {/* Left Text */}
         <div className="flex-1">
           <h3 className="text-xl font-semibold text-green-800">
             Forum for Meaningful Connections
@@ -58,3 +51,4 @@ export default function WhyChooseUs() {
     </section>
   );
 }
+export default WhyChooseUs;

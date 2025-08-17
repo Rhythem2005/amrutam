@@ -3,18 +3,15 @@ import photo4 from "../assets/photo4.png"
 import photo5 from "../assets/photo5.png"
 import photo6 from "../assets/photo6.png"
 
-export default function ChooseSessionMode() {
+ const ChooseSessionMode = () => {
   return (
     <section className="bg-yellow-50 py-16 px-8">
-      {/* Row 1 - Choose Session Mode */}
       <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
-        {/* Left Images */}
         <div className="flex-1 flex justify-center gap-4">
          <img src={photo4} alt="" />
          
         </div>
 
-        {/* Right Text */}
         <div className="flex-1">
           <h3 className="text-xl font-semibold text-green-800">
             Choose Your Session Mode
@@ -27,15 +24,12 @@ export default function ChooseSessionMode() {
         </div>
       </div>
 
-      {/* Row 2 - Smart Wallet */}
       <div className="flex flex-col md:flex-row-reverse items-center gap-10 mb-16">
-        {/* Right Images */}
         <div className="flex-1 flex justify-center gap-4">
           <img src={photo5} alt="" />
 
         </div>
 
-        {/* Left Text */}
         <div className="flex-1">
           <h3 className="text-xl font-semibold text-green-800">
             Smart Wallet
@@ -48,15 +42,12 @@ export default function ChooseSessionMode() {
         </div>
       </div>
 
-      {/* Row 3 - Flexible Work Timing */}
       <div className="flex flex-col md:flex-row items-center gap-10">
-        {/* Left Images */}
         <div className="flex-1 flex justify-center gap-4">
           <img src={photo6} alt="" />
          
         </div>
 
-        {/* Right Text */}
         <div className="flex-1">
           <h3 className="text-xl font-semibold text-green-800">
             Flexible Work Timing
@@ -71,3 +62,4 @@ export default function ChooseSessionMode() {
     </section>
   );
 }
+export default ChooseSessionMode;

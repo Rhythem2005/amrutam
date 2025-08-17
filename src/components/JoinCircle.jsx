@@ -4,10 +4,9 @@ import photo8 from "../assets/photo8.png";
 import photo9 from "../assets/photo9.png";
 import photo10 from "../assets/photo10.png";
 
-export default function JoinCircle() {
+const JoinCircle = () => {
   return (
     <section className="bg-yellow-50 py-16 px-8">
-      {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-green-800">
           Join Our Circle of Care
@@ -17,9 +16,7 @@ export default function JoinCircle() {
         </p>
       </div>
 
-      {/* Main Layout */}
       <div className="flex flex-col md:flex-row items-center gap-12">
-        {/* Left Steps */}
         <div className="flex-1 space-y-4 py-10">
           {[
             {
@@ -49,7 +46,6 @@ export default function JoinCircle() {
           ))}
         </div>
 
-        {/* Right Image */}
         <div className="flex-1">
           <div className="bg-gray-200 w-full rounded-lg flex items-center justify-center">
             <img src={photo7} alt="Referral Process" />
@@ -57,7 +53,6 @@ export default function JoinCircle() {
         </div>
       </div>
 
-      {/* Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mt-12">
         {["Consultations", "Payment withdrawal", "Schedule"].map(
           (label, index) => (
@@ -75,10 +70,8 @@ export default function JoinCircle() {
         )}
       </div>
 
-      {/* New Three-Phone Section */}
       <div className="mt-16">
         <div className="grid md:grid-cols-3 gap-8 items-start">
-          {/* Left */}
           <div className="text-center">
             <h3 className="text-lg font-semibold text-green-800 mb-4">
               Value Your Practice
@@ -92,7 +85,6 @@ export default function JoinCircle() {
             </div>
           </div>
 
-          {/* Middle */}
           <div className="text-center">
             <h3 className="text-lg font-semibold text-green-800 mb-4">
               Today’s Healing Journey
@@ -106,7 +98,6 @@ export default function JoinCircle() {
             </div>
           </div>
 
-          {/* Right */}
           <div className="text-center">
             <h3 className="text-lg font-semibold text-green-800 mb-4">
               Consultation Details
@@ -122,7 +113,6 @@ export default function JoinCircle() {
         </div>
       </div>
 
-      {/* Join Now Button */}
       <div className="text-center mt-8">
         <button className="px-8 py-3 bg-green-800 text-white rounded-lg">
           Join Now
@@ -131,3 +121,4 @@ export default function JoinCircle() {
     </section>
   );
 }
+export default JoinCircle;

@@ -1,10 +1,9 @@
 import React from "react";
 import photo2 from '../assets/photo2.png'
 
-export default function Hero() {
+const Hero = () => {
   return (
     <section className="bg-gradient-to-r from-yellow-50 to-yellow-100 py-12 px-8 flex flex-col md:flex-row items-center">
-      {/* Left Content */}
       <div className="flex-1 space-y-6">
         <p className="text-gray-500">Namaste, Welcome to Amrutam</p>
         <h1 className="text-4xl font-bold text-green-800">
@@ -16,7 +15,6 @@ export default function Hero() {
         <button className="bg-green-700 text-white px-6 py-3 rounded hover:bg-green-800">
           Join Now
         </button>
-        {/* Stats */}
         <div className="flex space-x-8 pt-4">
           <div>
             <p className="text-xl font-bold text-green-800">500+</p>
@@ -29,9 +27,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Right Content */}
       <div className="flex-1 flex justify-center mt-8 md:mt-0">
-        {/* Placeholder for doctor images */}
         <div className="w-80 h-80 bg-gray-200 rounded-full flex items-center justify-center">
           <img src={photo2} alt="my photo" />
         </div>
@@ -39,3 +35,4 @@ export default function Hero() {
     </section>
   );
 }
+export default Hero;

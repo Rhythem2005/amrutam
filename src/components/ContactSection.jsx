@@ -2,19 +2,15 @@ import React, { useState } from "react";
 import photo12 from "../assets/photo12.png";
 
 const ContactSection = () => {
-  // Form states
+  
   const [name, setName] = useState("");
   const [contact, setContact] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const SubmitHandler = (e) => {
     e.preventDefault();
-    // You can handle form submission here (API call, console log, etc.)
-    console.log({ name, contact, email, message });
-    alert("Message Sent! (Check console for details)");
-    
-    // Clear form
+    // after submitting the input it clears the input 
     setName("");
     setContact("");
     setEmail("");
@@ -24,7 +20,7 @@ const ContactSection = () => {
   return (
     <section className="bg-yellow-50 py-16">
       <div className="max-w-6xl mx-auto px-6">
-        {/* HEADING */}
+       
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-green-800 mb-4">
             Let’s Connect
@@ -35,9 +31,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        {/* FORM + IMAGE */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-yellow-50">
-          {/* LEFT IMAGE */}
           <div>
             <img
               src={photo12}
@@ -46,9 +40,8 @@ const ContactSection = () => {
             />
           </div>
 
-          {/* RIGHT FORM */}
           <form
-            onSubmit={handleSubmit}
+            onSubmit={SubmitHandler}
             className="bg-yellow-50 p-6 border border-yellow-200 rounded-lg"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
